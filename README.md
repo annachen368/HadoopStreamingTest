@@ -36,7 +36,7 @@ $ bin/hdfs dfs -mkdir /user/xxx/input/
 $ bin/hdfs dfs -put file01 input/
 $ bin/hdfs dfs -put file02 input/
 $ bin/hdfs dfs -cat /user/anna/output/part-r-00000
-
+```
 More detail: http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
 
 
