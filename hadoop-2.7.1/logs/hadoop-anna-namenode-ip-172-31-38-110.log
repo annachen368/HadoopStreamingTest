@@ -1059,3 +1059,10 @@ Caused by: ENOENT: No such file or directory
 2015-10-15 01:50:58,917 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 13 
 2015-10-15 01:50:58,918 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /tmp/hadoop-anna/dfs/name/current/edits_inprogress_0000000000000000285 -> /tmp/hadoop-anna/dfs/name/current/edits_0000000000000000285-0000000000000000286
 2015-10-15 01:50:58,918 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 287
+2015-10-15 01:51:58,939 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2015-10-15 01:51:58,939 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2015-10-15 01:51:58,939 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 287
+2015-10-15 01:51:58,940 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 10 
+2015-10-15 01:51:58,940 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 11 
+2015-10-15 01:51:58,941 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /tmp/hadoop-anna/dfs/name/current/edits_inprogress_0000000000000000287 -> /tmp/hadoop-anna/dfs/name/current/edits_0000000000000000287-0000000000000000288
+2015-10-15 01:51:58,941 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 289
