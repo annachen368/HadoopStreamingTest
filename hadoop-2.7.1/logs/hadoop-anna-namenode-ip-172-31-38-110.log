@@ -1101,3 +1101,38 @@ Caused by: ENOENT: No such file or directory
 2015-10-15 01:56:59,064 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 13 
 2015-10-15 01:56:59,064 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /tmp/hadoop-anna/dfs/name/current/edits_inprogress_0000000000000000297 -> /tmp/hadoop-anna/dfs/name/current/edits_0000000000000000297-0000000000000000298
 2015-10-15 01:56:59,064 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 299
+2015-10-15 01:57:59,087 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2015-10-15 01:57:59,087 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2015-10-15 01:57:59,087 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 299
+2015-10-15 01:57:59,088 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 12 
+2015-10-15 01:57:59,089 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 14 
+2015-10-15 01:57:59,089 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /tmp/hadoop-anna/dfs/name/current/edits_inprogress_0000000000000000299 -> /tmp/hadoop-anna/dfs/name/current/edits_0000000000000000299-0000000000000000300
+2015-10-15 01:57:59,089 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 301
+2015-10-15 01:58:59,114 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2015-10-15 01:58:59,114 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2015-10-15 01:58:59,114 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 301
+2015-10-15 01:58:59,115 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 13 
+2015-10-15 01:58:59,115 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 14 
+2015-10-15 01:58:59,116 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /tmp/hadoop-anna/dfs/name/current/edits_inprogress_0000000000000000301 -> /tmp/hadoop-anna/dfs/name/current/edits_0000000000000000301-0000000000000000302
+2015-10-15 01:58:59,116 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 303
+2015-10-15 01:59:59,139 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2015-10-15 01:59:59,139 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2015-10-15 01:59:59,140 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 303
+2015-10-15 01:59:59,140 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 13 
+2015-10-15 01:59:59,141 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 13 
+2015-10-15 01:59:59,206 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /tmp/hadoop-anna/dfs/name/current/edits_inprogress_0000000000000000303 -> /tmp/hadoop-anna/dfs/name/current/edits_0000000000000000303-0000000000000000304
+2015-10-15 01:59:59,207 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 305
+2015-10-15 02:00:59,230 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2015-10-15 02:00:59,230 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2015-10-15 02:00:59,230 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 305
+2015-10-15 02:00:59,230 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 12 
+2015-10-15 02:00:59,231 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 13 
+2015-10-15 02:00:59,231 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /tmp/hadoop-anna/dfs/name/current/edits_inprogress_0000000000000000305 -> /tmp/hadoop-anna/dfs/name/current/edits_0000000000000000305-0000000000000000306
+2015-10-15 02:00:59,231 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 307
+2015-10-15 02:01:59,253 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2015-10-15 02:01:59,253 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2015-10-15 02:01:59,253 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 307
+2015-10-15 02:01:59,253 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 11 
+2015-10-15 02:01:59,254 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 12 
+2015-10-15 02:01:59,255 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /tmp/hadoop-anna/dfs/name/current/edits_inprogress_0000000000000000307 -> /tmp/hadoop-anna/dfs/name/current/edits_0000000000000000307-0000000000000000308
+2015-10-15 02:01:59,255 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 309
