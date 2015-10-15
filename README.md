@@ -3,7 +3,7 @@
 ### 2. Set Java Path & Hadoop Path
 ~/.profile add the following:
 ```bash
-export JAVA_HOME=/usr/lib/jvm/default-java
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 export PATH=${JAVA_HOME}/bin:${PATH}
 export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 ```
