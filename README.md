@@ -35,7 +35,7 @@ $ bin/hdfs dfs -mkdir /user/xxx/input/
 # put the local file into the hdfs input folder
 $ bin/hdfs dfs -put file01 input/
 $ bin/hdfs dfs -put file02 input/
-$ bin/hdfs dfs -cat /user/anna/output/part-r-00000
+$ bin/hdfs dfs -cat /user/xxx/output/part-r-00000
 ```
 More detail: http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
 
