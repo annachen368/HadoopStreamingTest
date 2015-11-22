@@ -53,6 +53,6 @@ Please refer to [https://sites.google.com/site/z3strsolver/](https://sites.googl
  
  
 7. Run Z3-str2
-   *  ```Z3-str2.py -f <inputFile>```, e.g 
+   *  ```Z3-str.py -f <inputFile>```, e.g 
    
-     *  $./Z3-str2.py -f test/concat-002
+     *  $./Z3-str.py -f tests/concat-002
