@@ -56,6 +56,9 @@ Please refer to [https://sites.google.com/site/z3strsolver/](https://sites.googl
    *  ```Z3-str.py -f <inputFile>```, e.g 
    
      *  $./Z3-str.py -f tests/concat-002
+
+# Z3 4.1.1 Score code
+
 Z3 is a theorem prover from Microsoft Research.
 Z3 is licensed under MSR-LA (Microsoft Research License Agreement). 
 See http://z3.codeplex.com/license for more information about this license.
