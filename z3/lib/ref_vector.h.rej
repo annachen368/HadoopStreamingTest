@@ -1,0 +1,26 @@
+--- lib/ref_vector.h	2012-10-02 17:00:52.000000000 -0400
++++ ../../../myStrTheory/z3_src_4.1.1/lib/ref_vector.h	2014-09-27 02:13:08.357908005 -0400
+@@ -198,12 +198,12 @@
+     
+     ref_vector(ref_vector const & other): 
+         super(ref_manager_wrapper<T, TManager>(other.m_manager)) {
+-        append(other);
++        this->append(other);
+     }
+ 
+     ref_vector(TManager & m, unsigned sz, T * const * data):
+         super(ref_manager_wrapper<T, TManager>(m)) {
+-        append(sz, data);
++        this->append(sz, data);
+     }
+     
+     TManager & get_manager() const {
+@@ -271,7 +271,7 @@
+     ref_vector & set(ref_vector const& other) {
+         if (this != &other) {
+             this->reset();
+-            append(other);
++            this->append(other);
+         }
+         return *this;
+     }

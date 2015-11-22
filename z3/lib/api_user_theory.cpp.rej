@@ -1,0 +1,49 @@
+--- lib/api_user_theory.cpp	2012-10-02 17:00:52.000000000 -0400
++++ ../../../myStrTheory/z3_src_4.1.1/lib/api_user_theory.cpp	2014-11-24 10:22:20.507612119 -0500
+@@ -234,6 +234,46 @@
+         Z3_CATCH;
+     }
+ 
++    // Integer theory integration
++    // =====================================================================
++    // [start]
++    Z3_ast Z3_theory_get_value_of_len(Z3_theory t, Z3_ast n) {
++      Z3_context c = Z3_theory_get_context(t);
++      Z3_TRY;
++      RESET_ERROR_CODE();
++      return of_ast(mk_t(t)->get_value_of_len(to_ast(n)));
++      Z3_CATCH_RETURN(0);
++    }
++
++    int Z3_theory_get_bound_strlen(Z3_theory t, Z3_ast n, int & lb, int  & ub) {
++      Z3_context c = Z3_theory_get_context(t);
++      Z3_TRY;
++      RESET_ERROR_CODE();
++      return mk_t(t)->get_bound_strlen(to_ast(n), lb, ub);
++      Z3_CATCH_RETURN(0);
++    }
++
++    void Z3_theory_set_arith_new_eq_cb(Z3_theory t, Z3_theory_ast_ast_callback_fptr fptr) {
++      Z3_context c = Z3_theory_get_context(t);
++      Z3_TRY;
++      mk_t(t)->set_arith_new_eq_cb(reinterpret_cast<smt::theory_app_app_callback_fptr>(fptr), reinterpret_cast<smt::user_theory *>(t));
++      RESET_ERROR_CODE();
++      Z3_CATCH;
++    }
++
++    Z3_ast Z3_theory_getArithEqcRoot(Z3_theory t, Z3_ast n) {
++      Z3_context c = Z3_theory_get_context(t);
++      Z3_TRY;
++      RESET_ERROR_CODE();
++      ast * nAst = to_ast(n);
++      if (nAst == NULL)
++        return NULL;
++      return of_ast(mk_t(t)->getArithEqcRoot(nAst));
++      Z3_CATCH_RETURN(0);
++    }
++    // [end]
++    // =====================================================================
++
+     void Z3_theory_assume_eq(Z3_theory t, Z3_ast lhs, Z3_ast rhs) {
+         Z3_context c = Z3_theory_get_context(t);
+         Z3_TRY;

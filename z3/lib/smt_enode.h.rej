@@ -1,0 +1,16 @@
+--- lib/smt_enode.h	2012-10-02 17:00:52.000000000 -0400
++++ ../../../myStrTheory/z3_src_4.1.1/lib/smt_enode.h	2014-09-26 23:40:28.553558929 -0400
+@@ -91,6 +91,13 @@
+         friend class euf_manager;
+         friend class conflict_resolution;
+ 
++        // Integer theory integration
++        // =====================================================================
++        // [start]
++        friend class user_theory;
++        // [end]
++        // =====================================================================
++
+         theory_var_list * get_th_var_list() { 
+             return m_th_var_list.get_th_var() == null_theory_var ? 0 : &m_th_var_list; 
+         }

@@ -1,0 +1,26 @@
+--- lib/theory_arith_core.h	2012-10-02 17:00:52.000000000 -0400
++++ ../../../myStrTheory/z3_src_4.1.1/lib/theory_arith_core.h	2014-12-05 15:23:40.025521445 -0500
+@@ -962,6 +962,23 @@
+             !m_util.is_real(n1->get_owner())) {
+             return;
+         }
++        // Integer theory integration
++        // =====================================================================
++        // [start]
++        if (m_util.is_int(n1->get_owner()))
++          m_arith_eq_stack.push(var_pair(v1, v2));
++
++        // =====================================================================
++        if (my_arith_new_eq_fptr != NULL && my_string_theory != NULL) {
++          context & ctx = get_context();
++          ast_manager & man = get_manager();
++          ast * ast_v1 = get_enode(v1)->get_owner();
++          ast * ast_v2 = get_enode(v2)->get_owner();
++          my_arith_new_eq_fptr(my_string_theory, to_app(ast_v1), to_app(ast_v2));
++        }
++        // [end]
++        // =====================================================================
++
+         if (m_params.m_arith_eq_bounds) {  
+             enode * n2 = get_enode(v2);
+             SASSERT(n1->get_root() == n2->get_root());
