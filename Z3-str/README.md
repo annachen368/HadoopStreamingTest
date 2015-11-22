@@ -48,7 +48,7 @@ Please refer to [https://sites.google.com/site/z3strsolver/](https://sites.googl
 
        
 6. Setup Z3-str2 driver script
-   * In "Z3-str2.py", change the value of the variable "solver" to point to the 
+   * In "Z3-str.py", change the value of the variable "solver" to point to the 
      Z3-str2 binary "str" just built
  
  
